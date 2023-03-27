@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7596B59C-0268-421C-8AF5-498F8245746A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E15B149B-155C-43E4-BE5C-F86B2E3913B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "core_ml_emteq/read_config.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "readConfig(from:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "012927FC-2AAA-49DC-89BE-0BDB6D9DE3D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "core_ml_emteq/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "10BFFBE9-7B08-4460-B930-D204C504DD31"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "core_ml_emteq/oco_file_parser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "prepareColumns()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "10BFFBE9-7B08-4460-B930-D204C504DD31 - 996cfe2ea04b25da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "core_ml_emteq.OcoFileParser.prepareColumns() -&gt; ()"
+                  moduleName = "core_ml_emteq"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonionikoloski/Desktop/core_ml_emteq/core_ml_emteq/oco_file_parser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "1740">
+               </Location>
+               <Location
+                  uuid = "10BFFBE9-7B08-4460-B930-D204C504DD31 - c9b9d97c4feb9041"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #10 (Swift.String) -&gt; Swift.Bool in core_ml_emteq.OcoFileParser.prepareColumns() -&gt; ()"
+                  moduleName = "core_ml_emteq"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonionikoloski/Desktop/core_ml_emteq/core_ml_emteq/oco_file_parser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDCA4ECB-653E-497A-8267-42E4CC319EC3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "core_ml_emteq/oco_file_parser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "init(config:filePath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CCE684E2-0BEB-4041-96DA-8924AB35A8EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "core_ml_emteq/oco_file_parser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "prepareColumns()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CCE684E2-0BEB-4041-96DA-8924AB35A8EE - 996cfe2ea04b2a01"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "core_ml_emteq.OcoFileParser.prepareColumns() -&gt; ()"
+                  moduleName = "core_ml_emteq"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonionikoloski/Desktop/core_ml_emteq/core_ml_emteq/oco_file_parser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "CCE684E2-0BEB-4041-96DA-8924AB35A8EE - 1f9165ae035bf44a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.String) -&gt; Swift.Bool in core_ml_emteq.OcoFileParser.prepareColumns() -&gt; ()"
+                  moduleName = "core_ml_emteq"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonionikoloski/Desktop/core_ml_emteq/core_ml_emteq/oco_file_parser.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
