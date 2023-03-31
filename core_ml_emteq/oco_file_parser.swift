@@ -58,6 +58,9 @@ class OcoFileParser: DataParser {
     override func prepareColumns() {
         cols = dataFile[0].keys.map { $0 }
           print(cols)
+        
+        
+        
         columnsTimestamp = cols.filter { $0.lowercased().contains("timestamp") }
            columnsAcc = cols.filter { $0.lowercased().contains("accelerometer") }
            columnsGyro = cols.filter { $0.lowercased().contains("gyroscope") }

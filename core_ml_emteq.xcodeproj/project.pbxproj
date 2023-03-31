@@ -15,6 +15,8 @@
 		33720D0829CF3D540055D5A7 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D0729CF3D540055D5A7 /* DataParser.swift */; };
 		33720D0B29CF40970055D5A7 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D0A29CF40970055D5A7 /* CodableCSV */; };
 		33720D0D29CF852B0055D5A7 /* test.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33720D0C29CF852B0055D5A7 /* test.csv */; };
+		33720D0F29D6D1840055D5A7 /* algo_ml_expression_recognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D0E29D6D1840055D5A7 /* algo_ml_expression_recognition.swift */; };
+		33720D1129D6D5910055D5A7 /*  calculateFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D1029D6D5910055D5A7 /*  calculateFeatures.swift */; };
 		338DDE3429CC70BF00FC8ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */; };
 		338DDE3629CC70BF00FC8ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */; };
 		338DDE3829CC70BF00FC8ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3729CC70BF00FC8ABE /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 		33720D0229CF3A350055D5A7 /* oco_file_parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oco_file_parser.swift; sourceTree = "<group>"; };
 		33720D0729CF3D540055D5A7 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		33720D0C29CF852B0055D5A7 /* test.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.csv; path = "../../../Downloads/oco-rt-python/data/test.csv"; sourceTree = "<group>"; };
+		33720D0E29D6D1840055D5A7 /* algo_ml_expression_recognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algo_ml_expression_recognition.swift; sourceTree = "<group>"; };
+		33720D1029D6D5910055D5A7 /*  calculateFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " calculateFeatures.swift"; sourceTree = "<group>"; };
 		338DDE3029CC70BF00FC8ABE /* core_ml_emteq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core_ml_emteq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				338DDE3729CC70BF00FC8ABE /* ViewController.swift */,
 				33720CFB29CF32B10055D5A7 /* read_config.swift */,
 				33720D0229CF3A350055D5A7 /* oco_file_parser.swift */,
+				33720D0E29D6D1840055D5A7 /* algo_ml_expression_recognition.swift */,
+				33720D1029D6D5910055D5A7 /*  calculateFeatures.swift */,
 				33720D0729CF3D540055D5A7 /* DataParser.swift */,
 				338DDE3929CC70BF00FC8ABE /* Main.storyboard */,
 				338DDE3C29CC70C100FC8ABE /* Assets.xcassets */,
@@ -181,8 +187,10 @@
 				33720CFC29CF32B10055D5A7 /* read_config.swift in Sources */,
 				33720D0829CF3D540055D5A7 /* DataParser.swift in Sources */,
 				338DDE4829CC71AC00FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */,
+				33720D1129D6D5910055D5A7 /*  calculateFeatures.swift in Sources */,
 				338DDE3429CC70BF00FC8ABE /* AppDelegate.swift in Sources */,
 				33720D0329CF3A350055D5A7 /* oco_file_parser.swift in Sources */,
+				33720D0F29D6D1840055D5A7 /* algo_ml_expression_recognition.swift in Sources */,
 				338DDE3629CC70BF00FC8ABE /* SceneDelegate.swift in Sources */,
 				338DDE4A29CC842300FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */,
 			);
