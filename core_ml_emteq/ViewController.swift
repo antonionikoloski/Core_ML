@@ -29,13 +29,6 @@ class ViewController: UIViewController {
                 print("Error initializing OcoFileParser: \(error.localizedDescription)")
             }
         }
-       
-
-       // let features = calculateFeatures(data: inputData)
-      //   print(inputData)
-      //  print(features)
-       
-    
         
         
          

@@ -40,6 +40,21 @@ func parseArrays(content: String) -> [[Double]]? {
     return arrays
 }
 
+
+
+
+func convertTo2DArray(_ array: [Double]) -> [[Double]] {
+    var result: [[Double]] = []
+    for i in 0..<5 {
+        let start = i * 18
+        let end = start + 18
+        result.append(Array(array[start..<end]))
+    }
+    return result
+}
+
+
+
 func parseArraysoutput(from text: String) -> [[Double]] {
     let lines = text.components(separatedBy: .newlines)
     var bigArray: [[Double]] = []
