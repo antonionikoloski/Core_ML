@@ -17,17 +17,15 @@
 		33720D0F29D6D1840055D5A7 /* algo_ml_expression_recognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D0E29D6D1840055D5A7 /* algo_ml_expression_recognition.swift */; };
 		33720D1129D6D5910055D5A7 /*  calculateFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D1029D6D5910055D5A7 /*  calculateFeatures.swift */; };
 		33720D1329D70E240055D5A7 /* test_outputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D1229D70E240055D5A7 /* test_outputs.swift */; };
-		33720D1529D70FB60055D5A7 /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33720D1429D70FB60055D5A7 /* input.txt */; };
-		33720D1729D712F00055D5A7 /* output.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33720D1629D712F00055D5A7 /* output.txt */; };
-		33720D1929D8AD9F0055D5A7 /* output_python.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33720D1829D8AD9F0055D5A7 /* output_python.txt */; };
+		33720D1D29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33720D1C29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel */; };
+		33720D1F29DC9F560055D5A7 /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33720D1E29DC9F560055D5A7 /* input.txt */; };
+		33720D2129DC9F660055D5A7 /* output_python.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33720D2029DC9F660055D5A7 /* output_python.txt */; };
 		338DDE3429CC70BF00FC8ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */; };
 		338DDE3629CC70BF00FC8ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */; };
 		338DDE3829CC70BF00FC8ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3729CC70BF00FC8ABE /* ViewController.swift */; };
 		338DDE3B29CC70BF00FC8ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338DDE3929CC70BF00FC8ABE /* Main.storyboard */; };
 		338DDE3D29CC70C100FC8ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338DDE3C29CC70C100FC8ABE /* Assets.xcassets */; };
 		338DDE4029CC70C100FC8ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338DDE3E29CC70C100FC8ABE /* LaunchScreen.storyboard */; };
-		338DDE4829CC71AC00FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE4729CC71AC00FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel */; };
-		338DDE4A29CC842300FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE4929CC842300FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +36,9 @@
 		33720D0E29D6D1840055D5A7 /* algo_ml_expression_recognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algo_ml_expression_recognition.swift; sourceTree = "<group>"; };
 		33720D1029D6D5910055D5A7 /*  calculateFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " calculateFeatures.swift"; sourceTree = "<group>"; };
 		33720D1229D70E240055D5A7 /* test_outputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_outputs.swift; sourceTree = "<group>"; };
-		33720D1429D70FB60055D5A7 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = input.txt; path = "../../../Downloads/oco-rt-python/input.txt"; sourceTree = "<group>"; };
-		33720D1629D712F00055D5A7 /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = output.txt; path = ../../output.txt; sourceTree = "<group>"; };
-		33720D1829D8AD9F0055D5A7 /* output_python.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = output_python.txt; path = "../../../Downloads/oco-rt-python/output_python.txt"; sourceTree = "<group>"; };
+		33720D1C29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = expression_recognition_new_detrend_circular_buffer.mlmodel; sourceTree = "<group>"; };
+		33720D1E29DC9F560055D5A7 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		33720D2029DC9F660055D5A7 /* output_python.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output_python.txt; sourceTree = "<group>"; };
 		338DDE3029CC70BF00FC8ABE /* core_ml_emteq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core_ml_emteq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,8 +47,6 @@
 		338DDE3C29CC70C100FC8ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		338DDE3F29CC70C100FC8ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338DDE4129CC70C100FC8ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		338DDE4729CC71AC00FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = expression_recognition_new_detrend_circular_buffer.mlmodel; path = "../../../Downloads/oco-rt-python/expression_recognition_new_detrend_circular_buffer.mlmodel"; sourceTree = "<group>"; };
-		338DDE4929CC842300FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = expression_recognition_new_detrend_circular_buffer.mlmodel; path = "../../../Downloads/oco-rt-python/expression_recognition_new_detrend_circular_buffer.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +82,10 @@
 		338DDE3229CC70BF00FC8ABE /* core_ml_emteq */ = {
 			isa = PBXGroup;
 			children = (
-				33720D1829D8AD9F0055D5A7 /* output_python.txt */,
-				33720D1629D712F00055D5A7 /* output.txt */,
-				33720D1429D70FB60055D5A7 /* input.txt */,
+				33720D2029DC9F660055D5A7 /* output_python.txt */,
+				33720D1E29DC9F560055D5A7 /* input.txt */,
+				33720D1C29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel */,
 				33720D0C29CF852B0055D5A7 /* test.csv */,
-				338DDE4729CC71AC00FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel */,
-				338DDE4929CC842300FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel */,
 				338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */,
 				338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */,
 				338DDE3729CC70BF00FC8ABE /* ViewController.swift */,
@@ -178,12 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				338DDE4029CC70C100FC8ABE /* LaunchScreen.storyboard in Resources */,
+				33720D1F29DC9F560055D5A7 /* input.txt in Resources */,
 				33720D0D29CF852B0055D5A7 /* test.csv in Resources */,
 				338DDE3D29CC70C100FC8ABE /* Assets.xcassets in Resources */,
-				33720D1929D8AD9F0055D5A7 /* output_python.txt in Resources */,
-				33720D1729D712F00055D5A7 /* output.txt in Resources */,
 				338DDE3B29CC70BF00FC8ABE /* Main.storyboard in Resources */,
-				33720D1529D70FB60055D5A7 /* input.txt in Resources */,
+				33720D2129DC9F660055D5A7 /* output_python.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,13 +191,12 @@
 				338DDE3829CC70BF00FC8ABE /* ViewController.swift in Sources */,
 				33720CFC29CF32B10055D5A7 /* read_config.swift in Sources */,
 				33720D0829CF3D540055D5A7 /* DataParser.swift in Sources */,
-				338DDE4829CC71AC00FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */,
 				33720D1129D6D5910055D5A7 /*  calculateFeatures.swift in Sources */,
 				338DDE3429CC70BF00FC8ABE /* AppDelegate.swift in Sources */,
 				33720D0329CF3A350055D5A7 /* oco_file_parser.swift in Sources */,
 				33720D0F29D6D1840055D5A7 /* algo_ml_expression_recognition.swift in Sources */,
 				338DDE3629CC70BF00FC8ABE /* SceneDelegate.swift in Sources */,
-				338DDE4A29CC842300FC8ABE /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */,
+				33720D1D29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
