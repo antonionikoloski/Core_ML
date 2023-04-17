@@ -13,13 +13,18 @@
 		33720D0629CF3A5F0055D5A7 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D0529CF3A5F0055D5A7 /* SwiftCSV */; };
 		33720D0829CF3D540055D5A7 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D0729CF3D540055D5A7 /* DataParser.swift */; };
 		33720D0B29CF40970055D5A7 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D0A29CF40970055D5A7 /* CodableCSV */; };
-		33720D0D29CF852B0055D5A7 /* test.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33720D0C29CF852B0055D5A7 /* test.csv */; };
 		33720D0F29D6D1840055D5A7 /* algo_ml_expression_recognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D0E29D6D1840055D5A7 /* algo_ml_expression_recognition.swift */; };
 		33720D1129D6D5910055D5A7 /*  calculateFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D1029D6D5910055D5A7 /*  calculateFeatures.swift */; };
 		33720D1329D70E240055D5A7 /* test_outputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D1229D70E240055D5A7 /* test_outputs.swift */; };
 		33720D1D29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 33720D1C29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel */; };
 		33720D1F29DC9F560055D5A7 /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33720D1E29DC9F560055D5A7 /* input.txt */; };
 		33720D2129DC9F660055D5A7 /* output_python.txt in Resources */ = {isa = PBXBuildFile; fileRef = 33720D2029DC9F660055D5A7 /* output_python.txt */; };
+		33720D2329DCBFB30055D5A7 /* Butterworth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D2229DCBFB30055D5A7 /* Butterworth.swift */; };
+		33720D2629DCC2B40055D5A7 /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D2529DCC2B40055D5A7 /* ComplexModule */; };
+		33720D2829DCC2B40055D5A7 /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D2729DCC2B40055D5A7 /* Numerics */; };
+		33720D2A29DCC2B40055D5A7 /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D2929DCC2B40055D5A7 /* RealModule */; };
+		33720D2D29DE14760055D5A7 /* Surge in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D2C29DE14760055D5A7 /* Surge */; };
+		33720D2F29EDCF1C0055D5A7 /* test.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33720D2E29EDCF1C0055D5A7 /* test.csv */; };
 		338DDE3429CC70BF00FC8ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */; };
 		338DDE3629CC70BF00FC8ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */; };
 		338DDE3829CC70BF00FC8ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3729CC70BF00FC8ABE /* ViewController.swift */; };
@@ -32,13 +37,14 @@
 		33720CFB29CF32B10055D5A7 /* read_config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = read_config.swift; sourceTree = "<group>"; };
 		33720D0229CF3A350055D5A7 /* oco_file_parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oco_file_parser.swift; sourceTree = "<group>"; };
 		33720D0729CF3D540055D5A7 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
-		33720D0C29CF852B0055D5A7 /* test.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = test.csv; path = "../../../Downloads/oco-rt-python/data/test.csv"; sourceTree = "<group>"; };
 		33720D0E29D6D1840055D5A7 /* algo_ml_expression_recognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algo_ml_expression_recognition.swift; sourceTree = "<group>"; };
 		33720D1029D6D5910055D5A7 /*  calculateFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " calculateFeatures.swift"; sourceTree = "<group>"; };
 		33720D1229D70E240055D5A7 /* test_outputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_outputs.swift; sourceTree = "<group>"; };
 		33720D1C29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = expression_recognition_new_detrend_circular_buffer.mlmodel; sourceTree = "<group>"; };
 		33720D1E29DC9F560055D5A7 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		33720D2029DC9F660055D5A7 /* output_python.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output_python.txt; sourceTree = "<group>"; };
+		33720D2229DCBFB30055D5A7 /* Butterworth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butterworth.swift; sourceTree = "<group>"; };
+		33720D2E29EDCF1C0055D5A7 /* test.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.csv; sourceTree = "<group>"; };
 		338DDE3029CC70BF00FC8ABE /* core_ml_emteq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core_ml_emteq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,9 +60,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33720D2D29DE14760055D5A7 /* Surge in Frameworks */,
 				33720CFF29CF34840055D5A7 /* Yams in Frameworks */,
 				33720D0B29CF40970055D5A7 /* CodableCSV in Frameworks */,
+				33720D2A29DCC2B40055D5A7 /* RealModule in Frameworks */,
 				33720D0629CF3A5F0055D5A7 /* SwiftCSV in Frameworks */,
+				33720D2629DCC2B40055D5A7 /* ComplexModule in Frameworks */,
+				33720D2829DCC2B40055D5A7 /* Numerics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +92,10 @@
 		338DDE3229CC70BF00FC8ABE /* core_ml_emteq */ = {
 			isa = PBXGroup;
 			children = (
+				33720D2E29EDCF1C0055D5A7 /* test.csv */,
 				33720D2029DC9F660055D5A7 /* output_python.txt */,
 				33720D1E29DC9F560055D5A7 /* input.txt */,
 				33720D1C29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel */,
-				33720D0C29CF852B0055D5A7 /* test.csv */,
 				338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */,
 				338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */,
 				338DDE3729CC70BF00FC8ABE /* ViewController.swift */,
@@ -99,6 +109,7 @@
 				338DDE3C29CC70C100FC8ABE /* Assets.xcassets */,
 				338DDE3E29CC70C100FC8ABE /* LaunchScreen.storyboard */,
 				338DDE4129CC70C100FC8ABE /* Info.plist */,
+				33720D2229DCBFB30055D5A7 /* Butterworth.swift */,
 			);
 			path = core_ml_emteq;
 			sourceTree = "<group>";
@@ -123,6 +134,10 @@
 				33720CFE29CF34840055D5A7 /* Yams */,
 				33720D0529CF3A5F0055D5A7 /* SwiftCSV */,
 				33720D0A29CF40970055D5A7 /* CodableCSV */,
+				33720D2529DCC2B40055D5A7 /* ComplexModule */,
+				33720D2729DCC2B40055D5A7 /* Numerics */,
+				33720D2929DCC2B40055D5A7 /* RealModule */,
+				33720D2C29DE14760055D5A7 /* Surge */,
 			);
 			productName = core_ml_emteq;
 			productReference = 338DDE3029CC70BF00FC8ABE /* core_ml_emteq.app */;
@@ -156,6 +171,8 @@
 				33720CFD29CF34840055D5A7 /* XCRemoteSwiftPackageReference "Yams" */,
 				33720D0429CF3A5F0055D5A7 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
 				33720D0929CF40970055D5A7 /* XCRemoteSwiftPackageReference "CodableCSV" */,
+				33720D2429DCC2B40055D5A7 /* XCRemoteSwiftPackageReference "swift-numerics" */,
+				33720D2B29DE14760055D5A7 /* XCRemoteSwiftPackageReference "Surge" */,
 			);
 			productRefGroup = 338DDE3129CC70BF00FC8ABE /* Products */;
 			projectDirPath = "";
@@ -173,7 +190,7 @@
 			files = (
 				338DDE4029CC70C100FC8ABE /* LaunchScreen.storyboard in Resources */,
 				33720D1F29DC9F560055D5A7 /* input.txt in Resources */,
-				33720D0D29CF852B0055D5A7 /* test.csv in Resources */,
+				33720D2F29EDCF1C0055D5A7 /* test.csv in Resources */,
 				338DDE3D29CC70C100FC8ABE /* Assets.xcassets in Resources */,
 				338DDE3B29CC70BF00FC8ABE /* Main.storyboard in Resources */,
 				33720D2129DC9F660055D5A7 /* output_python.txt in Resources */,
@@ -195,6 +212,7 @@
 				338DDE3429CC70BF00FC8ABE /* AppDelegate.swift in Sources */,
 				33720D0329CF3A350055D5A7 /* oco_file_parser.swift in Sources */,
 				33720D0F29D6D1840055D5A7 /* algo_ml_expression_recognition.swift in Sources */,
+				33720D2329DCBFB30055D5A7 /* Butterworth.swift in Sources */,
 				338DDE3629CC70BF00FC8ABE /* SceneDelegate.swift in Sources */,
 				33720D1D29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */,
 			);
@@ -438,6 +456,22 @@
 				minimumVersion = 0.6.7;
 			};
 		};
+		33720D2429DCC2B40055D5A7 /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics#adding-swift-numerics-as-a-dependency";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		33720D2B29DE14760055D5A7 /* XCRemoteSwiftPackageReference "Surge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattt/Surge.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -455,6 +489,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 33720D0929CF40970055D5A7 /* XCRemoteSwiftPackageReference "CodableCSV" */;
 			productName = CodableCSV;
+		};
+		33720D2529DCC2B40055D5A7 /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33720D2429DCC2B40055D5A7 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
+		};
+		33720D2729DCC2B40055D5A7 /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33720D2429DCC2B40055D5A7 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+		33720D2929DCC2B40055D5A7 /* RealModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33720D2429DCC2B40055D5A7 /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = RealModule;
+		};
+		33720D2C29DE14760055D5A7 /* Surge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33720D2B29DE14760055D5A7 /* XCRemoteSwiftPackageReference "Surge" */;
+			productName = Surge;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
