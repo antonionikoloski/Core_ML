@@ -1,0 +1,132 @@
+# frame format related info, useful for deserialization
+frameFormat:
+  fStart:
+    offset: 0
+    size: 1
+    value: 2
+    valueis: fixed
+    datais: u8
+  fLen:
+    offset: 1
+    size: 2
+    value: 82
+    valueis: fixed
+    datais: u16
+  fType:
+    offset: 3
+    size: 1
+    value: 1
+    valueis: fixed
+    datais: u8
+  fVer:
+    offset: 4
+    size: 1
+    value: 1
+    valueis: fixed
+    datais: u8
+  fNum:
+    offset: 5
+    size: 1
+    value: 0
+    valueis: initial
+    datais: u8
+  fTime:
+    offset: 6
+    size: 5
+    value: 0
+    valueis: unknown
+    datais: u40
+  fNav:
+    offset: 11
+    size: 24
+    count: 6
+    valueis: unknown
+    datais: arrays16
+    elements: 2
+    elementlbls:
+      - NAV_DELTA_X
+      - NAV_DELTA_Y
+  fProx:
+    offset: 35
+    size: 16
+    count: 8
+    valueis: unknown
+    datais: arrayu16
+    elements: 1
+    elementlbls:
+      - PROX_PSDATA
+  fImu:
+    offset: 51
+    size: 24
+    count: 1
+    valueis: unknown
+    datais: arrays16
+    elements: 12
+    elementlbls:
+      - IMU_ACC_X
+      - IMU_ACC_Y
+      - IMU_ACC_Z
+      - IMU_MAG_X
+      - IMU_MAG_Y
+      - IMU_MAG_Z
+      - IMU_GYR_X
+      - IMU_GYR_Y
+      - IMU_GYR_Z
+      - IMU_EUL_X
+      - IMU_EUL_Y
+      - IMU_EUL_Z
+  fPres:
+    offset: 75
+    size: 4
+    count: 1
+    valueis: unknown
+    datais: u32
+    elements: 1
+    elementlbls:
+      - PRES_DATA
+  fCrc16:
+    offset: 79
+    size: 2
+    valueis: unknown
+    datais: u16
+  fEnd:
+    offset: 81
+    size: 1
+    value: 3
+    valueis: fixed
+    datais: u8
+frameInfo:
+  iDesc: Sensor data frame descriptor
+  iEndian: little-endian
+  iDataisTypes:
+    - u8
+    - u16
+    - u32
+    - u40
+    - s8
+    - s16
+    - s32
+    - arrayu8
+    - arrayu16
+    - arrayu32
+    - arrays8
+    - arrays16
+    - arrays32
+  iValueisTypes:
+    - fixed
+    - initial
+    - unknown
+  iTimeFmt: Jan-2020-UTC-milliseconds
+# bluetooth related configs/constants
+bluetooth:
+  characteristics:
+    data: "e31b1001-0495-481b-a209-d87806e67251"
+  name:
+    prefix: "MOOD"
+# parser related configs/constants
+parser:
+  bytes: 512
+# dataframe related configs
+dataframe:
+  max_rows: 1000000  # max number of rows, pre-allocated to speed things up
+  output_dir: "recordings"

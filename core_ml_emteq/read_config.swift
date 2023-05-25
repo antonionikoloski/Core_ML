@@ -27,4 +27,11 @@ func readConfig(from file: String) -> [String: Any]? {
     
     return nil
 }
-
+func getfilePath(forResource resource: String, ofType type: String) -> String? {
+    if let path = Bundle.main.path(forResource: resource, ofType: type) {
+        return path
+    } else {
+        print("File '\(resource).\(type)' not found.")
+        return nil
+    }
+}

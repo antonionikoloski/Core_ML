@@ -5,13 +5,12 @@ import CodableCSV
 
 class OcoFileParser: DataParser {
     // Convert OCO recording file to data arrays, given at a fixed rate of 50 Hz
-
+    var iDataRow: Int = 0
+    var timer: Timer?
     let config: [String: Any]
     let filePath: String
     var parseInProgress: Bool = false
-    var dataFile: [[String: String]]
-    var iDataRow: Int = 0
-
+    var dataFile:   CSV<Named>
     init(config: [String: Any], filePath: String) throws {
         // Create file parser that converts recording rows to data arrays
         //
@@ -20,11 +19,10 @@ class OcoFileParser: DataParser {
         // config : [String: Any]
         //     Dictionary containing config params
         // file_path : String
-        //     Path to recording file
-
+        // Path to recording file
         self.config = config
         self.filePath = filePath
-        print(filePath)
+        
         let fileContents = try String(contentsOfFile: filePath)
         let decoder = CSVDecoder { settings in
             settings.headerStrategy = .firstLine
@@ -33,8 +31,7 @@ class OcoFileParser: DataParser {
             
             // Access the header and rows
       
-        print(csvFile.rows[0])
-        
+
         
         var decodedDataFile = try decoder.decode([[String: String]].self, from: fileContents)
         decodedDataFile = decodedDataFile.map { row in
@@ -42,22 +39,29 @@ class OcoFileParser: DataParser {
             newRow.removeValue(forKey: "Label")
             return newRow
         }
-        self.dataFile = decodedDataFile
-//       for (index, row) in dataFile.enumerated() {
-//            print("Row \(index):", row)
-//       }
+    //   let modifiedCsvFile = try CSV(rows: modifiedRows)
+    self.dataFile = csvFile
+
+    
+       //  Convert the csvFile object to an array of dictionaries with named keys
+        // Get the header (column names) and rows of the csvFile object
+       //  Get the header (column names) and rows of the csvFile object
+      
+
+       
      
         super.init()
         // Array that holds the parsed data
-        data = Array(repeating: [:], count: dataFile[0].keys.count)
+        data = Array(repeating: [:], count: dataFile.rows[0].keys.count)
        
 
         prepareColumns()
+        prepareColumnsMap()
     }
 
     override func prepareColumns() {
-        cols = dataFile[0].keys.map { $0 }
-          print(cols)
+        cols = dataFile.rows[0].keys.map { $0 }
+          
         
         
         
@@ -69,27 +73,46 @@ class OcoFileParser: DataParser {
            columnsNav = cols.filter { $0.lowercased().contains("nav") }
            columnsProx = cols.filter { $0.lowercased().contains("prox") }
            columnsPressure = cols.filter { $0.lowercased().contains("pressure") }
-        print(columnsProx.count)
-          columnsPressure = cols.filter { $0.contains("Pressure") }
     }
-
-    override func parse() {
-        // Parse raw bytes and store data in dataframe
-
-        let sleepTime = DispatchTimeInterval.milliseconds(20)
-        parseInProgress = true
-
-        while parseInProgress {
-            if iDataRow < dataFile.count {
-                let row = dataFile[iDataRow]
-                putDataArray(row)
-                iDataRow += 1
-                Thread.sleep(forTimeInterval: 0.02)
-            } else {
-                stopParsing()
-            }
+    func prepareColumnsMap()
+    {
+        let header = dataFile.header
+        
+        for (index,column) in header.enumerated()
+        {
+            self.colsMap[column] = index
         }
     }
+
+  override  func parse(algo: ExpressionsRecognitionMlAlgo) {
+         
+          timer = Timer.scheduledTimer(withTimeInterval: 0.02, repeats: true) { [weak self] timer in
+              guard let self = self else { return }
+              var data =  self.dataFile.rows[self.iDataRow]
+             
+              do {
+                  try algo.process(&data)
+              } catch {
+                  print("Failed to process data: \(error)")
+                  timer.invalidate()
+                  return
+              }
+              self.iDataRow += 1
+              // stop the timer when no more data
+              if self.iDataRow >= self.dataFile.rows.count{
+                  timer.invalidate()
+              }
+              
+              
+             
+             
+          }
+          
+          // Add the timer to the current run loop
+          RunLoop.current.add(timer!, forMode: .default)
+          RunLoop.current.run()
+      }
+  
 
      func putDataArray(_ row: [String: String]) {
         // Add parsed row data to the data array
@@ -98,6 +121,9 @@ class OcoFileParser: DataParser {
     override func stopParsing() {
         // Stop receiving and parsing data
         parseInProgress = false
+    }
+    func getColumns() -> Int {
+        return dataFile.rows.count
     }
 }
 

@@ -7,84 +7,79 @@
 
 import UIKit
 import CoreML
+import Foundation
+import Accelerate
+
 class ViewController: UIViewController {
-    
+    var config: [String: Any]?
+    var plotter_config: [String: Any]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let filePath = Bundle.main.path(forResource: "config", ofType: "yml") {
-            // Read the configuration file
-            guard let  config = readConfig(from: filePath) else { return  }
-            
-            do {
-                guard let filePath_csv = Bundle.main.path(forResource: "test", ofType: "csv") else { return  }
-                // Create an instance of the OcoFileParser class
-                let ocoFileParser = try OcoFileParser(config: config, filePath: filePath_csv)
-
-                // Call the parse method
-              //  ocoFileParser.parse()
-
-                // Optionally, you can call other methods on the ocoFileParser instance
-                // For example: ocoFileParser.stopParsing()
-            } catch {
-                print("Error initializing OcoFileParser: \(error.localizedDescription)")
-            }
+        runMainApp()
+        
+        
+        // Parameters
+        // let fs = 50.0
+        //  let n = 1000
+        
+        // Generate the signal
+        //  let signal = generateSignal(fs: fs, n: n)
+        
+        // Provide the coefficients from Python
+        //  let b: [Double] = [0.0913149 , 0.1826298 , 0.0913149]
+        //  let a: [Double] = [1,       -0.98240579 , 0.34766539]
+        
+        // Apply the filter
+        //  let filteredSignal = applyFilter(signal: signal, b: b, a: a)
+        
+        // Print filtered signal
+        //print(filteredSignal)
+        //print(signal)
+        
+        //  let bl: [Double] = [0.00094469 ,0.00188938, 0.00094469]
+        //  let al: [Double] = [ 1,        -1.91119707 , 0.91497583]
+        
+        //  let x_trend = applyZeroPhaseFilter(signal: x_trend, b: bl, a: al)
+        //   let reader = CSVReader()
+        //   if let values = reader.readCSV(fileName: "x_trend", fileType: "csv") {
+        //   print("Values: \(values)")
+        //       let x_trend = applyZeroPhaseFilter(signal: values, b: bl, a: al)
+        //     print(x_trend)
+        
+        //  } else {
+        //     print("Failed to read values from .csv file")
+        //  }
+        
+        
+        //        if let configPath = getfilePath(forResource: "config", ofType: "yml") {
+        //            if let configFile = readConfig(from: configPath) {
+        //                config = configFile
+        //            } else {
+        //                print("Unable to read configuration.")
+        //            }
+        //        }
+        //        if let plotterconfigPath = getfilePath(forResource: "expressions", ofType: "yml") {
+        //            if let configFileplotter = readConfig(from: plotterconfigPath) {
+        //                plotter_config = configFileplotter
+        //            } else {
+        //                print("Unable to read configuration.")
+        //            }
+        //        }
+        //        let filePath = getfilePath(forResource: "test", ofType: "csv")!
+        //
+        //        do {
+        //            let ocoFileParserInstance = try OcoFileParser(config: config!, filePath: filePath)
+        //            let dataProcessorInstance = DataProcessor(config: config!, parser: ocoFileParserInstance)
+        //
+        //        } catch {
+        //            print("Error initializing OcoFileParser:", error.localizedDescription)
+        //        }
+        
+    }
+    func runMainApp() {
+        Task.init {
+            await MainApp.main()
         }
-        let inputData: [[Double]] = [
-            [10.865823444357531,14.508303572862207,13.55295335109745,12.53796901699641,15.56241022045599,11.214281376518532,-0.12568666056063163,0.09612773692006098,0.11355404811933005,-0.046999409650353555,0.01315430777774268,-0.008659768211941268,-0.0035289495105901413,-0.017706116529803355,0.18914592939908448,0.16034806718917383,0.00027026308792692884,-0.0014488112683964992],
-            [10.831403436540102,14.424648438112587,13.372079334346147,12.514778402958603,15.490520086462642,11.165086447694145,-0.37584719572048453,0.2903177656872917,0.4778542146593701,-0.00258102752575284,-0.05637734165633561,0.1929395164605091,-0.012057306825062033,-0.0509912382002687,0.44998931144342014,0.2877289915467339,0.0011237843187736052,-0.0074242016460279335],
-            [10.666663112869012,13.95543551842568,13.142128023199751,12.283377370794463,15.095637766688851,11.015214827488286,-1.8357258095434354,1.2628430653089324,2.7465249494432893,0.66799084105248,-0.7013996368083729,1.754220631097986,-0.06434247673270246,-0.2549425297785241,1.4319279026280158,0.5252158778318409,0.00635338894006016,-0.044034071296796186],
-            [10.63068179466303,13.872052369538377,12.916384372058536,12.234044961736986,15.016841599684888,10.982496374996593,-2.058550480344249,1.4141501685310143,3.1003490864363683,0.7740992330571725,-0.8146975238628853,1.9993278006351989,-0.07250212576143901,-0.2868200859039064,1.5835606721392297,0.561334637298207,0.00717087648081406,-0.0497611821752099],
-            [10.617595795736301,13.852395946669468,12.8725929867029,12.205825003475383,14.996085860129105,10.969201970066823,-2.0642376881892517,1.4183792638359876,3.105299895611882,0.7774162068878891,-0.8305769208625177,2.0066322711360174,-0.07271914610046737,-0.28773842712093867,1.5877393636712773,0.5671678976866878,0.007194570294673972,-0.04993396985315932]
-            
-        ]
-
-       // let features = calculateFeatures(data: inputData)
-      //   print(inputData)
-      //  print(features)
-        var allFeatures: [[Double]] = []
-        if let fileURL = Bundle.main.url(forResource: "input", withExtension: "txt"),
-           let content = readContentOfFile(fileURL: fileURL),
-           let arrays = parseArrays(content: content) {
-            for (index, array) in arrays.enumerated() {
-                let array_double = convertTo2DArray(array)
-                   let features = calculateFeatures(data: array_double)
-                allFeatures.append(features!)
-            }
-            
-            } else {
-            print("Failed to read and parse the content.")
-        }
-        
-        
-      
-        let eps: Double = 1e-6
-        var countNotSatisfyingCondition = 0
-        if let text = readTextFile() {
-            let bigArray = parseArraysoutput(from: text)
-            let smallerArray = allFeatures.count < bigArray.count ? allFeatures : bigArray
-
-            // Iterate through the smaller array and compare the elements
-            for (index, smallArray) in smallerArray.enumerated() {
-                let allFeaturesArray = allFeatures[index]
-                let bigArrayArray = bigArray[index]
-
-                // Compare the elements in the arrays
-                for i in 0..<smallArray.count {
-                    let x1 = allFeaturesArray[i]
-                           let x2 = bigArrayArray[i]
-
-                           if abs(x1 - x2) > eps {
-                               countNotSatisfyingCondition += 1
-                           }
-                }
-            }
-            
-            print("Big array: \(countNotSatisfyingCondition)")
-        }
-        
-        
-         
-        
         
     }
 }

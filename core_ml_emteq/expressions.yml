@@ -1,0 +1,129 @@
+samples: 250 # number of samples to show on each plot
+fps: 30
+signals:
+  - sig_name: 'Nav/Raw.X[LeftBrow]'
+    row: 1
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'x'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.Y[LeftBrow]'
+    row: 1
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'y'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.X[LeftCheek]'
+    row: 2
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'x'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.Y[LeftCheek]'
+    row: 2
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'y'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.X[LeftTemple]'
+    row: 3
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'x'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.Y[LeftTemple]'
+    row: 3
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'y'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.X[RightTemple]'
+    row: 4
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'x'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.Y[RightTemple]'
+    row: 4
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'y'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.X[RightCheek]'
+    row: 5
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'x'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.Y[RightCheek]'
+    row: 5
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'y'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.X[RightBrow]'
+    row: 6
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'x'
+    ylabel: 'mm'
+  - sig_name: 'Nav/Raw.Y[RightBrow]'
+    row: 6
+    col: 1
+    ymin: -5
+    ymax: 5
+    label: 'y'
+    ylabel: 'mm'
+  - sig_name: 'Prox/Raw[LeftBrow]'
+    row: 1
+    col: 2
+    ymin: -1
+    ymax: 50
+    ylabel: 'mm'
+    color: 'C2'
+  - sig_name: 'Prox/Raw[LeftCheek]'
+    row: 2
+    col: 2
+    ymin: -1
+    ymax: 50
+    ylabel: 'mm'
+    color: 'C2'
+  - sig_name: 'Prox/Raw[CentreTopBrow]'
+    row: 3
+    col: 2
+    ymin: -1
+    ymax: 50
+    ylabel: 'mm'
+    color: 'C2'
+  - sig_name: 'Prox/Raw[CentreBottomBrow]'
+    row: 4
+    col: 2
+    ymin: -1
+    ymax: 50
+    ylabel: 'mm'
+    color: 'C2'
+  - sig_name: 'Prox/Raw[RightCheek]'
+    row: 5
+    col: 2
+    ymin: -1
+    ymax: 50
+    ylabel: 'mm'
+    color: 'C2'
+  - sig_name: 'Prox/Raw[RightBrow]'
+    row: 6
+    col: 2
+    ymin: -1
+    ymax: 50
+    ylabel: 'mm'
+    color: 'C2'

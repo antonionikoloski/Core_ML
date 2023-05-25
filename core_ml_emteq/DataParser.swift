@@ -13,7 +13,7 @@ class DataParser {
     var columnsProx: [String]
     var columnsPressure: [String]
     var cols: [String]
-    var colsMap: [String: Int]
+    var colsMap: [String: Int] = [:]
     
     init() {
         data = []
@@ -34,13 +34,10 @@ class DataParser {
         // This method should be overridden in subclasses.
         fatalError("prepareColumns() method is not implemented")
     }
+   
+
     
-    func prepareColumnsMap() {
-        // Prepare map columns names -> numbers
-        colsMap = Dictionary(uniqueKeysWithValues: zip(cols, cols.indices))
-    }
-    
-    func parse() {
+    func parse(algo: ExpressionsRecognitionMlAlgo) {
         // Parse method that continuously parses data from the stream
         // This method should be overridden in subclasses.
         fatalError("parse() method is not implemented")
@@ -57,9 +54,7 @@ class DataParser {
         fatalError("stopParsing() method is not implemented")
     }
     
-    func getColumns() -> [String] {
-        return cols
-    }
+    
     
     func getColumnsMap() -> [String: Int] {
         return colsMap

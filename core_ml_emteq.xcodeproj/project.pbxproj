@@ -25,6 +25,14 @@
 		33720D2A29DCC2B40055D5A7 /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D2929DCC2B40055D5A7 /* RealModule */; };
 		33720D2D29DE14760055D5A7 /* Surge in Frameworks */ = {isa = PBXBuildFile; productRef = 33720D2C29DE14760055D5A7 /* Surge */; };
 		33720D2F29EDCF1C0055D5A7 /* test.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33720D2E29EDCF1C0055D5A7 /* test.csv */; };
+		33720D3329F5A26E0055D5A7 /* config.yml in Resources */ = {isa = PBXBuildFile; fileRef = 33720D3229F5A26E0055D5A7 /* config.yml */; };
+		33720D3529F5AA520055D5A7 /* expressions.yml in Resources */ = {isa = PBXBuildFile; fileRef = 33720D3429F5AA520055D5A7 /* expressions.yml */; };
+		33720D3729FD4BF10055D5A7 /* data_processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D3629FD4BF10055D5A7 /* data_processor.swift */; };
+		33720D3929FFB6890055D5A7 /* algo_interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D3829FFB6890055D5A7 /* algo_interface.swift */; };
+		33720D3B29FFB9F70055D5A7 /* wearing_algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D3A29FFB9F70055D5A7 /* wearing_algo.swift */; };
+		33720D3D29FFC7400055D5A7 /* oco_main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D3C29FFC7400055D5A7 /* oco_main.swift */; };
+		33720D3F2A10F31A0055D5A7 /* calibration.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33720D3E2A10F31A0055D5A7 /* calibration.csv */; };
+		33720D412A1409DB0055D5A7 /* StandardScaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720D402A1409DB0055D5A7 /* StandardScaler.swift */; };
 		338DDE3429CC70BF00FC8ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */; };
 		338DDE3629CC70BF00FC8ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */; };
 		338DDE3829CC70BF00FC8ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338DDE3729CC70BF00FC8ABE /* ViewController.swift */; };
@@ -45,6 +53,14 @@
 		33720D2029DC9F660055D5A7 /* output_python.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output_python.txt; sourceTree = "<group>"; };
 		33720D2229DCBFB30055D5A7 /* Butterworth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Butterworth.swift; sourceTree = "<group>"; };
 		33720D2E29EDCF1C0055D5A7 /* test.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.csv; sourceTree = "<group>"; };
+		33720D3229F5A26E0055D5A7 /* config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = config.yml; sourceTree = "<group>"; };
+		33720D3429F5AA520055D5A7 /* expressions.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = expressions.yml; sourceTree = "<group>"; };
+		33720D3629FD4BF10055D5A7 /* data_processor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data_processor.swift; sourceTree = "<group>"; };
+		33720D3829FFB6890055D5A7 /* algo_interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algo_interface.swift; sourceTree = "<group>"; };
+		33720D3A29FFB9F70055D5A7 /* wearing_algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wearing_algo.swift; sourceTree = "<group>"; };
+		33720D3C29FFC7400055D5A7 /* oco_main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oco_main.swift; sourceTree = "<group>"; };
+		33720D3E2A10F31A0055D5A7 /* calibration.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calibration.csv; sourceTree = "<group>"; };
+		33720D402A1409DB0055D5A7 /* StandardScaler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardScaler.swift; sourceTree = "<group>"; };
 		338DDE3029CC70BF00FC8ABE /* core_ml_emteq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core_ml_emteq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338DDE3329CC70BF00FC8ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338DDE3529CC70BF00FC8ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +108,9 @@
 		338DDE3229CC70BF00FC8ABE /* core_ml_emteq */ = {
 			isa = PBXGroup;
 			children = (
+				33720D3E2A10F31A0055D5A7 /* calibration.csv */,
+				33720D3429F5AA520055D5A7 /* expressions.yml */,
+				33720D3229F5A26E0055D5A7 /* config.yml */,
 				33720D2E29EDCF1C0055D5A7 /* test.csv */,
 				33720D2029DC9F660055D5A7 /* output_python.txt */,
 				33720D1E29DC9F560055D5A7 /* input.txt */,
@@ -102,7 +121,12 @@
 				33720D1229D70E240055D5A7 /* test_outputs.swift */,
 				33720CFB29CF32B10055D5A7 /* read_config.swift */,
 				33720D0229CF3A350055D5A7 /* oco_file_parser.swift */,
+				33720D3629FD4BF10055D5A7 /* data_processor.swift */,
+				33720D3829FFB6890055D5A7 /* algo_interface.swift */,
+				33720D3A29FFB9F70055D5A7 /* wearing_algo.swift */,
+				33720D3C29FFC7400055D5A7 /* oco_main.swift */,
 				33720D0E29D6D1840055D5A7 /* algo_ml_expression_recognition.swift */,
+				33720D402A1409DB0055D5A7 /* StandardScaler.swift */,
 				33720D1029D6D5910055D5A7 /*  calculateFeatures.swift */,
 				33720D0729CF3D540055D5A7 /* DataParser.swift */,
 				338DDE3929CC70BF00FC8ABE /* Main.storyboard */,
@@ -190,10 +214,13 @@
 			files = (
 				338DDE4029CC70C100FC8ABE /* LaunchScreen.storyboard in Resources */,
 				33720D1F29DC9F560055D5A7 /* input.txt in Resources */,
+				33720D3F2A10F31A0055D5A7 /* calibration.csv in Resources */,
+				33720D3529F5AA520055D5A7 /* expressions.yml in Resources */,
 				33720D2F29EDCF1C0055D5A7 /* test.csv in Resources */,
 				338DDE3D29CC70C100FC8ABE /* Assets.xcassets in Resources */,
 				338DDE3B29CC70BF00FC8ABE /* Main.storyboard in Resources */,
 				33720D2129DC9F660055D5A7 /* output_python.txt in Resources */,
+				33720D3329F5A26E0055D5A7 /* config.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33720D3929FFB6890055D5A7 /* algo_interface.swift in Sources */,
+				33720D3729FD4BF10055D5A7 /* data_processor.swift in Sources */,
 				33720D1329D70E240055D5A7 /* test_outputs.swift in Sources */,
 				338DDE3829CC70BF00FC8ABE /* ViewController.swift in Sources */,
 				33720CFC29CF32B10055D5A7 /* read_config.swift in Sources */,
@@ -212,7 +241,10 @@
 				338DDE3429CC70BF00FC8ABE /* AppDelegate.swift in Sources */,
 				33720D0329CF3A350055D5A7 /* oco_file_parser.swift in Sources */,
 				33720D0F29D6D1840055D5A7 /* algo_ml_expression_recognition.swift in Sources */,
+				33720D412A1409DB0055D5A7 /* StandardScaler.swift in Sources */,
+				33720D3B29FFB9F70055D5A7 /* wearing_algo.swift in Sources */,
 				33720D2329DCBFB30055D5A7 /* Butterworth.swift in Sources */,
+				33720D3D29FFC7400055D5A7 /* oco_main.swift in Sources */,
 				338DDE3629CC70BF00FC8ABE /* SceneDelegate.swift in Sources */,
 				33720D1D29DC9E7D0055D5A7 /* expression_recognition_new_detrend_circular_buffer.mlmodel in Sources */,
 			);
